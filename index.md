@@ -1,6 +1,6 @@
---
+---
 layout: default
---
+---
 
 ## Vítejte na stránkách IT kurzu
 
