@@ -31,20 +31,42 @@ Proměnné mají také využití v podmínkách, které určují, co se stane p�
 
 Jednoduché pole obsahuje prvky číslované (index) od 0 do n-1. Lze vypisovat jednotlivé prvky.
 
-    $fruits = array("Jablko", "Hruška", "Pomeranč");
-
+    $fruits = ["Jablko", "Hruška", "Pomeranč"];
+    echo $fruits[0]; // Výstup -> Jablko
+    
 Jednoduché asociativní pole obsahuje páry s klíčem a hodnotou. Místo indexu se používá klíč.
 
-    $student = array("name"=>"Petr","age"=>24,"grade"=>"A");
+    $student = ["name"=>"Petr","age"=>24,"grade"=>"A"];
     echo $student["name"]; // Výstup -> Petr
 
+2D pole je stejné jako jednoduché, ale má více řádků. U každého řádku definujeme index (od 0). Pro výpis 1 prvku potřebujeme znát řádek i sloupec (tedy dva indexy).
+
+    $pole[0] = ["Jan", "Novák", "Praha"];
+    $pole[1] = ["Petr", "Veselka", "Ostrava"];
+    $pole[2] = ["Josef", "Stvol", "Brno"];
+    echo $pole [0][1]; // Výstup -> Novák
+    
 ## Cykly
 
 V programování využijeme také cykly, zejména foreach, který se hodí pro procházení pole. Jak už název napovídá, for each (pro každý) projde všechny prvky pole
 
-    $fruits = array("Jablko", "Hruška", "Pomeranč");
+    $fruits = ["Jablko", "Hruška", "Pomeranč"];
     foreach ($fruits as $fruit) {
-        echo $fruit . "<br>;
+        echo $fruit . "<br>; // Vypise kazdou polozku pole a odradkuje
     }
+    
+Prvky můžeme vypsat i do tabulky (zde 2D pole):
 
-[Domů](./)
+    $zamec[0] = ["Jan", "Novák" ];
+    $zamec[1] = ["Petr", "Švarc"];
+    echo "<table>";
+    foreach($zamec as $z) { // Vybiram z pole $zamec a kazdy prvek oznacim jako $z
+        echo '<tr><td>'.$z[0].'</td><td>'.$z[1].'</td></tr>';
+    }
+    echo "</table>";
+
+Občas se hodí také for cyklus:
+
+    for( $x=0; $x<9; $x++ ) {
+    echo $x . ", ";
+    }
