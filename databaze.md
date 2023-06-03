@@ -15,7 +15,7 @@ provést v rozhraní phpMyAdmin.
 Při výběru datového typu se vždy řídíme povahou ukládaných dat (vybíráme datově nejúspornější
 způsob uložení informací)
 |Typ|Popis|
-|-|-|
+|-------------|---------|
 | Bit |0-1|
 | Int (integer)| celá čísla|
 | Float| čísla s desetinnou čárkou (tečkou)|
