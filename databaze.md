@@ -14,6 +14,7 @@ provést v rozhraní phpMyAdmin.
 ## Datové typy
 Při výběru datového typu se vždy řídíme povahou ukládaných dat (vybíráme datově nejúspornější
 způsob uložení informací)
+
 |Typ|Popis|
 |-------------|---------|
 | Bit |0-1|
