@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=bc10cde159929af890effa136229c0cc8f7a6b57">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#151515">
+<meta name="msapplication-navbutton-color" content="#151515">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Programování | IT kurzy</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Programování" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/programovani.html" />
+<meta property="og:url" content="http://localhost:4000/programovani.html" />
+<meta property="og:site_name" content="IT kurzy" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Programování" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"Programování","url":"http://localhost:4000/programovani.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/">
+          <h1>IT kurzy</h1>
+        </a>
+        <h2></h2>
+        <a href="/">Domů</a>
+        <section id="downloads">
+          
+         <!-- <a href="https://github.com/it-kurzy/it-kurzy.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>-->
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1 id="programování">Programování</h1>
+
+<p>Abychom mohli přidat do stránky interaktivitu - zpracovávat formuláře a třeba propojit web s databází, potřebujeme použít nějaký programovací jazyk, v našem případě PHP.</p>
+
+<h2 id="proměnné">Proměnné</h2>
+
+<p>Jako vždy v programování jsou základem proměnné. Proměnná je „přihrádka“ pro ukládání hodnot.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$jmeno = "Petr"; // Řetězec
+$vek = 35; // Celé číslo
+$prumer = 3.5; // Desetinné číslo
+$povoleno = true // Boolean
+</code></pre></div></div>
+
+<p>Proměnné lze vypsat do stránky:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$mesto = "Brno";
+$ulice = "Veveří";
+echo $mesto;
+echo $mesto . " " . $ulice; // Spojovani retezcu
+</code></pre></div></div>
+
+<p>Proměnné mají také využití v podmínkách, které určují, co se stane při ne/splnění.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$vek = 10;
+if ($vek &gt;= 18) {
+    echo "Můžeš vstoupit.".
+} else {
+    echo "Nemůžeš vstoupit";
+}
+</code></pre></div></div>
+
+<h2 id="pole">Pole</h2>
+
+<p>Jednoduché pole obsahuje prvky číslované (index) od 0 do n-1. Lze vypisovat jednotlivé prvky.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$fruits = ["Jablko", "Hruška", "Pomeranč"];
+echo $fruits[0]; // Výstup -&gt; Jablko
+</code></pre></div></div>
+
+<p>Jednoduché asociativní pole obsahuje páry s klíčem a hodnotou. Místo indexu se používá klíč.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$student = ["name"=&gt;"Petr","age"=&gt;24,"grade"=&gt;"A"];
+echo $student["name"]; // Výstup -&gt; Petr
+</code></pre></div></div>
+
+<p>2D pole je stejné jako jednoduché, ale má více řádků. U každého řádku definujeme index (od 0). Pro výpis 1 prvku potřebujeme znát řádek i sloupec (tedy dva indexy).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$pole[0] = ["Jan", "Novák", "Praha"];
+$pole[1] = ["Petr", "Veselka", "Ostrava"];
+$pole[2] = ["Josef", "Stvol", "Brno"];
+echo $pole [0][1]; // Výstup -&gt; Novák
+</code></pre></div></div>
+
+<h2 id="cykly">Cykly</h2>
+
+<p>V programování využijeme také cykly, zejména foreach, který se hodí pro procházení pole. Jak už název napovídá, for each (pro každý) projde všechny prvky pole</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$fruits = ["Jablko", "Hruška", "Pomeranč"];
+foreach ($fruits as $fruit) {
+    echo $fruit . "&lt;br&gt;; // Vypise kazdou polozku pole a odradkuje
+}
+</code></pre></div></div>
+
+<p>Prvky můžeme vypsat i do tabulky (zde 2D pole):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$zamec[0] = ["Jan", "Novák" ];
+$zamec[1] = ["Petr", "Švarc"];
+echo "&lt;table&gt;";
+foreach($zamec as $z) { // Vybiram z pole $zamec a kazdy prvek oznacim jako $z
+    echo '&lt;tr&gt;&lt;td&gt;'.$z[0].'&lt;/td&gt;&lt;td&gt;'.$z[1].'&lt;/td&gt;&lt;/tr&gt;';
+}
+echo "&lt;/table&gt;";
+</code></pre></div></div>
+
+<p>Občas se hodí také for cyklus:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for( $x=0; $x&lt;9; $x++ ) {
+echo $x . ", ";
+}
+</code></pre></div></div>
+
+      </section>
+    </div>
+  </body>
+</html>

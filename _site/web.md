@@ -44,13 +44,7 @@ Lomítko u druhé značky označuje její uzavření. Nepárové značky se pou�
 
 ## CSS
 
-
 Kaskádové styly (CSS) slouží pro změnu vzhledu prvků stránky (pozadí, barva, výška, šířka, ...).
-
-<a href="./samples/sample1.html" target="_blank">Ukázka - bez CSS</a>
-
-<a href="./samples/sample2.html" target="_blank">Ukázka - s CSS</a>
-
 Příklad napojení stylů a třídy:
 
     <!DOCTYPE html>

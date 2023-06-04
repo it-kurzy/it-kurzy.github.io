@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=bc10cde159929af890effa136229c0cc8f7a6b57">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#151515">
+<meta name="msapplication-navbutton-color" content="#151515">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Úvodní lekce - HTML a CSS | IT kurzy</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Úvodní lekce - HTML a CSS" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/web.html" />
+<meta property="og:url" content="http://localhost:4000/web.html" />
+<meta property="og:site_name" content="IT kurzy" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Úvodní lekce - HTML a CSS" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"Úvodní lekce - HTML a CSS","url":"http://localhost:4000/web.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/">
+          <h1>IT kurzy</h1>
+        </a>
+        <h2></h2>
+        <a href="/">Domů</a>
+        <section id="downloads">
+          
+         <!-- <a href="https://github.com/it-kurzy/it-kurzy.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>-->
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1 id="úvodní-lekce---html-a-css">Úvodní lekce - HTML a CSS</h1>
+
+<p>HTML je jazyk webových stránek. Je doplňován CSS (kaskádové styly) a dalšími jazyky, např. PHP, které umožňuje tvorbu dynamických stránek (zpracování formuláře, připojení k databázi).</p>
+
+<h2 id="html">HTML</h2>
+
+<p>Nezbytnou součástí HTML jsou značky, rozlišujeme <strong>párové</strong> a <strong>nepárové</strong>. Většina značek je párových (mají konec i začátek), např. <code class="language-plaintext highlighter-rouge">&lt;h1&gt;Nadpis&lt;/h1&gt;</code>
+Lomítko u druhé značky označuje její uzavření. Nepárové značky se používají např. u obrázků <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> či polí formuláře <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code></p>
+
+<h3 id="příklad---soubor-indexhtml">Příklad - soubor index.html</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Seznam, najdu tam co neznám&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;!-- Obsah webové stránky --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Značka</th>
+      <th>Popis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;!DOCTYPE html&gt;</code></td>
+      <td>Říká prohlížeči, že jde o dokument typu HTML</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;html&gt;</code></td>
+      <td>Určuje začátek a konec HTML dokumentu</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;head&gt;</code></td>
+      <td>Obsahuje informace pro prohlížeč a vyhledávače</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;title&gt;</code></td>
+      <td>Název stránky, který se zobrazuje v záhlaví prohlížeče</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;body&gt;</code></td>
+      <td>Viditelný obsah stránky, jako jsou texty, obrázky a odkazy</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> až <code class="language-plaintext highlighter-rouge">&lt;h6&gt;</code></td>
+      <td>Nadpisy různých úrovní (h1 je nejvyšší)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;p&gt;</code></td>
+      <td>Odstavec textu</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;a&gt;</code></td>
+      <td>Vytváří odkaz na jinou stránku nebo zdroj</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;img&gt;</code></td>
+      <td>Vkládá obrázek na stránku</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code></td>
+      <td>Vytváří seznam</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;li&gt;</code></td>
+      <td>Položka seznamu uvnitř <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;table&gt;</code></td>
+      <td>Vytváří tabulku</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code></td>
+      <td>Řádek tabulky</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;td&gt;</code></td>
+      <td>Buňka tabulky</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;form&gt;</code></td>
+      <td>Vytváří formulář pro zadávání dat</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;input&gt;</code></td>
+      <td>Vytváří vstupní pole v rámci formuláře</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;button&gt;</code></td>
+      <td>Vytváří tlačítko</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;div&gt;</code></td>
+      <td>Slouží k logickému seskupení a formátování obsahu</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;span&gt;</code></td>
+      <td>Slouží k logickému seskupení a formátování textu</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;!--Text--&gt;</code></td>
+      <td>Text, který je vidět POUZE v kódu, ne na stránce</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="css">CSS</h2>
+
+<p>Kaskádové styly (CSS) slouží pro změnu vzhledu prvků stránky (pozadí, barva, výška, šířka, …).
+Příklad napojení stylů a třídy:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+    	&lt;title&gt;Titulek&lt;/title&gt;
+    	&lt;!-- Napojení stylů --&gt;
+    	&lt;link rel="stylesheet" href="styl.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    	&lt;!—- Třída(viz níže) --&gt;
+    	&lt;p class="modry"&gt;Odstavec&lt;/p&gt;
+    	&lt;!—- Tento odstavec bude mít výchozí barvu --&gt;
+    	&lt;p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
+
+<p>Pro stylování slouží pravidla - základní zápis je: selektor {vlastnost: hodnota;}
+Selektor je to, co stylujeme. Lze vybrat více elementů, stačí oddělit čárkou, viz níže, nebo třídu (class) – ty lze použít pro vizuální odlišení prvků – měníme jen ty se stejnou třídou: <code class="language-plaintext highlighter-rouge">&lt;p class="trida"&gt;Odstavec&lt;/p&gt;</code>.</p>
+
+<p>Příklad CSS dokumentu - <code class="language-plaintext highlighter-rouge">style.css</code> (název a přípona souboru)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*Komentář*/
+h1, h2 { /* Elementy h1 a h2 */
+  color: red;
+}
+.modry { /* Třída modry */
+  color: blue;
+}
+/*Vycentrování prvku*/
+.stred {margin-left: auto; margin-right: auto;}
+</code></pre></div></div>
+
+<h3 id="základní-vlastnosti-css">Základní vlastnosti CSS</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vlastnost</th>
+      <th>Název v CSS</th>
+      <th>Příklady hodnot</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pozadí</td>
+      <td><code class="language-plaintext highlighter-rouge">background-color</code></td>
+      <td>red, #00ff00, rgb(255, 0, 0)</td>
+    </tr>
+    <tr>
+      <td>Barva fontu</td>
+      <td><code class="language-plaintext highlighter-rouge">color</code></td>
+      <td>black, #333333, rgba(0, 0, 0, 0.8)</td>
+    </tr>
+    <tr>
+      <td>Rodina písma</td>
+      <td><code class="language-plaintext highlighter-rouge">font-family</code></td>
+      <td>Arial, Verdana, Helvetica, sans-serif</td>
+    </tr>
+    <tr>
+      <td>Velikost písma</td>
+      <td><code class="language-plaintext highlighter-rouge">font-size</code></td>
+      <td>12px, 14px, 16px</td>
+    </tr>
+    <tr>
+      <td>Výška</td>
+      <td><code class="language-plaintext highlighter-rouge">height</code></td>
+      <td>100px, 50%, auto</td>
+    </tr>
+    <tr>
+      <td>Šířka</td>
+      <td><code class="language-plaintext highlighter-rouge">width</code></td>
+      <td>200px, 50%, auto</td>
+    </tr>
+    <tr>
+      <td>Rámeček</td>
+      <td><code class="language-plaintext highlighter-rouge">border</code></td>
+      <td>1px solid black, 2px dashed #333333</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="./">Domů</a></p>
+
+      </section>
+    </div>
+  </body>
+</html>

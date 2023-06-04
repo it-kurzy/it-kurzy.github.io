@@ -1,0 +1,100 @@
+<!--
+<!doctype HTML> Říká prohlížeči, že jde o HTML soubor 
+<html>	Určuje začátek a konec HTML dokumentu.
+<head>	Obsahuje informace pro prohlížeč a vyhledávače.
+<title>	Název stránky, který se zobrazuje v záhlaví prohlížeče.
+<body>	Viditelný obsah stránky, jako jsou texty, obrázky a odkazy.
+<h1> až <h6>	Nadpisy různých úrovní (h1 je nejvyšší).
+<p>	Odstavec textu.
+<a>	Vytváří odkaz na jinou stránku nebo zdroj.
+<img>	Vkládá obrázek na stránku.
+<ul>	Vytváří seznam.
+<li>	Položka seznamu uvnitř <ul>.
+<table>	Vytváří tabulku.
+<tr>	Řádek tabulky.
+<td>	Buňka tabulky.
+<form>	Vytváří formulář pro zadávání dat.
+<input>	Vytváří vstupní pole v rámci formuláře.
+<button>	Vytváří tlačítko.
+<div>	Slouží k logickému seskupení a formátování obsahu.
+<span>	Slouží k logickému seskupení a formátování textu.
+<nav>	Označuje navigační menu. 
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Data pro prohlížeč a vyhledávače -->
+    <link rel="stylesheet" href="styl.css" />
+    <title>Titulek stránky</title>
+  </head>
+  <body>
+    <!-- Obsah webové stránky -->
+
+    <h1>Moje webová stránka</h1>
+    <!-- Vnořování elementů, obalující div -->
+    <div class="obal">
+      <!-- Boxíky -->
+      <div class="box1">Boxík 1</div>
+      <div class="box2">Boxík 2</div>
+    </div>
+    <!-- Odstavce -->
+    <p>První odstavec textu.</p>
+    <p>
+      Druhý odstavec textu s odkazem. Přejít na web
+      <a href="http://o-a.cz">Orange Academy</a>
+    </p>
+    <!-- Úrovně nadpisů -->
+    <h1>Nadpis první úrovně</h1>
+    <h2>Nadpis druhé úrovně</h2>
+    <h3>Nadpis třetí úrovně</h3>
+    <h4>Nadpis čtvrté úrovně</h4>
+    <h5>Nadpis páté úrovně</h5>
+    <h6>Nadpis šesté úrovně</h6>
+
+    <h2>Seznam</h2>
+    <!-- Seznam položek -->
+    <ul>
+      <li>Položka 1</li>
+      <li>Položka 2</li>
+      <li>Položka 3</li>
+    </ul>
+
+    <h2>Obrázek</h2>
+    <!-- Obrázek -->
+    <img src="obrazek.png" />
+
+    <h2>Tabulka</h2>
+    <!-- Tabulka -->
+    <table>
+      <!-- Řádek tabulky -->
+      <tr>
+        <!-- Buňka tabulky -->
+        <td>Značka</td>
+        <td>Model</td>
+      </tr>
+      <tr>
+        <td>Škoda</td>
+        <td>Fabia</td>
+      </tr>
+      <tr>
+        <td>Škoda</td>
+        <td>Octavia</td>
+      </tr>
+    </table>
+    <h2>Formulář</h2>
+
+    <form action="#">
+      Značka:<input type="text" name="znacka" /><br />
+      Model:<input type="text" name="model" /><br />
+      Rok:<input type="number" name="rok" id="" /><br />
+      <input type="submit" />
+    </form>
+
+    <h2>Třídy</h2>
+    <!-- Text odstavce je modrý -->
+    <p class="modry">Modrý odstavec</p>
+    <!--Tento odstavec bude mít výchozí barvu -->
+    <p>Výchozí odstavec</p>
+  </body>
+</html>
