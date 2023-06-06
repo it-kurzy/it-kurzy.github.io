@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Databáze
 
 Databáze je soubor tabulek. V tabulkách jsou uložena data, název tabulky by měl souviset s jejich obsahem.
@@ -12,16 +16,17 @@ Pracovní postup je: vytvořit databázi, přidat do ní tabulky a ty poté plni
 provést v rozhraní phpMyAdmin.
 
 ## Datové typy
+
 Při výběru datového typu se vždy řídíme povahou ukládaných dat (vybíráme datově nejúspornější
 způsob uložení informací)
 
-|Typ|Popis|
-|-------------|---------|
-| Bit |0-1|
-| Int (integer)| celá čísla|
-| Float| čísla s desetinnou čárkou (tečkou)|
-| Double| Float s větší přesností a velikostí|
-| Char |ukládá po jednom znaku (resp. kolik se mu přiřadí)|
-| Varchar| uchovává textové řetězce|
-| Date |datum ve formátu Y-m-d (rok-měsíc-den)|
-| Timestamp |časové razítko|
+| Typ           | Popis                                              |
+| ------------- | -------------------------------------------------- |
+| Bit           | 0-1                                                |
+| Int (integer) | celá čísla                                         |
+| Float         | čísla s desetinnou čárkou (tečkou)                 |
+| Double        | Float s větší přesností a velikostí                |
+| Char          | ukládá po jednom znaku (resp. kolik se mu přiřadí) |
+| Varchar       | uchovává textové řetězce                           |
+| Date          | datum ve formátu Y-m-d (rok-měsíc-den)             |
+| Timestamp     | časové razítko                                     |

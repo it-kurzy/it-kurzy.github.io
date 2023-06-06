@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/style.css?v=bc10cde159929af890effa136229c0cc8f7a6b57">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup theme-color -->
@@ -26,18 +26,18 @@
 
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Úvodní lekce - HTML a CSS | IT kurzy</title>
-<meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Úvodní lekce - HTML a CSS" />
+<title>IT kurzy</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="IT kurzy" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="http://localhost:4000/web.html" />
 <meta property="og:url" content="http://localhost:4000/web.html" />
 <meta property="og:site_name" content="IT kurzy" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Úvodní lekce - HTML a CSS" />
+<meta property="twitter:title" content="IT kurzy" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","headline":"Úvodní lekce - HTML a CSS","url":"http://localhost:4000/web.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","headline":"IT kurzy","url":"http://localhost:4000/web.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -50,10 +50,11 @@
           <h1>IT kurzy</h1>
         </a>
         <h2></h2>
-        <a href="/">Domů</a>
+    
+      <a href="/" class="btn">Domů</a>
         <section id="downloads">
-          
-         <!-- <a href="https://github.com/it-kurzy/it-kurzy.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>-->
+        <!--    -->
+         <!-- <a href="" class="btn btn-github"><span class="icon"></span>View on GitHub</a>-->
         </section>
       </div>
     </header>
@@ -172,94 +173,6 @@ Lomítko u druhé značky označuje její uzavření. Nepárové značky se pou�
     </tr>
   </tbody>
 </table>
-
-<h2 id="css">CSS</h2>
-
-<p>Kaskádové styly (CSS) slouží pro změnu vzhledu prvků stránky (pozadí, barva, výška, šířka, …).
-Příklad napojení stylů a třídy:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-    	&lt;title&gt;Titulek&lt;/title&gt;
-    	&lt;!-- Napojení stylů --&gt;
-    	&lt;link rel="stylesheet" href="styl.css"&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    	&lt;!—- Třída(viz níže) --&gt;
-    	&lt;p class="modry"&gt;Odstavec&lt;/p&gt;
-    	&lt;!—- Tento odstavec bude mít výchozí barvu --&gt;
-    	&lt;p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code></pre></div></div>
-
-<p>Pro stylování slouží pravidla - základní zápis je: selektor {vlastnost: hodnota;}
-Selektor je to, co stylujeme. Lze vybrat více elementů, stačí oddělit čárkou, viz níže, nebo třídu (class) – ty lze použít pro vizuální odlišení prvků – měníme jen ty se stejnou třídou: <code class="language-plaintext highlighter-rouge">&lt;p class="trida"&gt;Odstavec&lt;/p&gt;</code>.</p>
-
-<p>Příklad CSS dokumentu - <code class="language-plaintext highlighter-rouge">style.css</code> (název a přípona souboru)</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*Komentář*/
-h1, h2 { /* Elementy h1 a h2 */
-  color: red;
-}
-.modry { /* Třída modry */
-  color: blue;
-}
-/*Vycentrování prvku*/
-.stred {margin-left: auto; margin-right: auto;}
-</code></pre></div></div>
-
-<h3 id="základní-vlastnosti-css">Základní vlastnosti CSS</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Vlastnost</th>
-      <th>Název v CSS</th>
-      <th>Příklady hodnot</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Pozadí</td>
-      <td><code class="language-plaintext highlighter-rouge">background-color</code></td>
-      <td>red, #00ff00, rgb(255, 0, 0)</td>
-    </tr>
-    <tr>
-      <td>Barva fontu</td>
-      <td><code class="language-plaintext highlighter-rouge">color</code></td>
-      <td>black, #333333, rgba(0, 0, 0, 0.8)</td>
-    </tr>
-    <tr>
-      <td>Rodina písma</td>
-      <td><code class="language-plaintext highlighter-rouge">font-family</code></td>
-      <td>Arial, Verdana, Helvetica, sans-serif</td>
-    </tr>
-    <tr>
-      <td>Velikost písma</td>
-      <td><code class="language-plaintext highlighter-rouge">font-size</code></td>
-      <td>12px, 14px, 16px</td>
-    </tr>
-    <tr>
-      <td>Výška</td>
-      <td><code class="language-plaintext highlighter-rouge">height</code></td>
-      <td>100px, 50%, auto</td>
-    </tr>
-    <tr>
-      <td>Šířka</td>
-      <td><code class="language-plaintext highlighter-rouge">width</code></td>
-      <td>200px, 50%, auto</td>
-    </tr>
-    <tr>
-      <td>Rámeček</td>
-      <td><code class="language-plaintext highlighter-rouge">border</code></td>
-      <td>1px solid black, 2px dashed #333333</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><a href="./">Domů</a></p>
 
       </section>
     </div>

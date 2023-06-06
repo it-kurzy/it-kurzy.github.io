@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Programování
 
 Abychom mohli přidat do stránky interaktivitu - zpracovávat formuláře a třeba propojit web s databází, potřebujeme použít nějaký programovací jazyk, v našem případě PHP.
@@ -33,7 +37,7 @@ Jednoduché pole obsahuje prvky číslované (index) od 0 do n-1. Lze vypisovat 
 
     $fruits = ["Jablko", "Hruška", "Pomeranč"];
     echo $fruits[0]; // Výstup -> Jablko
-    
+
 Jednoduché asociativní pole obsahuje páry s klíčem a hodnotou. Místo indexu se používá klíč.
 
     $student = ["name"=>"Petr","age"=>24,"grade"=>"A"];
@@ -45,7 +49,7 @@ Jednoduché asociativní pole obsahuje páry s klíčem a hodnotou. Místo index
     $pole[1] = ["Petr", "Veselka", "Ostrava"];
     $pole[2] = ["Josef", "Stvol", "Brno"];
     echo $pole [0][1]; // Výstup -> Novák
-    
+
 ## Cykly
 
 V programování využijeme také cykly, zejména foreach, který se hodí pro procházení pole. Jak už název napovídá, for each (pro každý) projde všechny prvky pole
@@ -54,7 +58,7 @@ V programování využijeme také cykly, zejména foreach, který se hodí pro p
     foreach ($fruits as $fruit) {
         echo $fruit . "<br>; // Vypise kazdou polozku pole a odradkuje
     }
-    
+
 Prvky můžeme vypsat i do tabulky (zde 2D pole):
 
     $zamec[0] = ["Jan", "Novák" ];
