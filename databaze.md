@@ -30,3 +30,47 @@ způsob uložení informací)
 | Varchar       | uchovává textové řetězce                           |
 | Date          | datum ve formátu Y-m-d (rok-měsíc-den)             |
 | Timestamp     | časové razítko                                     |
+
+
+## SQL dotazy
+
+Používáme databázi MySQL. Pro spuštění klikneme na **START** v rozhraní XAMPP. Do administrace se dostaneme přes tlačítko **ADMIN** 
+### Správa databáze 
+Používáme **phpMyAdmin**.  V levém postranním panelu můžeme zakládat nové tabulky a databáze (ikonka tabulky/databáze).
+
+Pro založení databáze zvolte **Nová** (šedá ikonka).
+
+![Seznam databází](/img/db1.png)
+
+Nyní zadejte název databáze a klikněte **Vytvořit**.
+
+![alt](/img/db2.png)
+
+
+Teď nám phpMyAdmin říká, že databáze neobsahuje tabulky. Zadejte název tabulky a potvrďte.
+
+![alt](/img/db3.png)
+
+V prvním řádku zadejte id, u sloupce index vyberte PRIMARY, potvrďte, dále zaškrtněte volbu A_I.
+U ostatních hodnot (například jméno, příjmení, věk) změňte pouze typ (INT pro čísla, VARCHAR pro text). U textových hodnot zadejte délku.
+
+![alt](/img/db4.png)
+
+Potvrďte kliknutím na tlačítko **Proveď** dole.
+
+## PHP a SQL - ukázka
+    // Propojeni na databazi
+    include "conn.php";
+    // SQL dotaz
+    $sql = "SELECT Id, Prijmeni, Jmeno
+        FROM spisovatele";
+    // Vysledek dotazu
+    $autori = fetchAll( $sql, $conn );
+    // Vypis do seznamu
+    echo "<ul>";
+    // Kazdeho autora vypis jako - jmeno a prijmeni
+    foreach( $autori as $a ){
+    
+    echo "<li>" . $a[ "Prijmeni" ] . " " . $a["Jmeno"] . "</li>";
+    }
+    echo "</ul>";
