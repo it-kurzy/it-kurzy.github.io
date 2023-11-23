@@ -17,7 +17,7 @@ Příklad napojení stylů a třídy:
         <head>
         	<title>Titulek</title>
         	<!-- Napojení stylů -->
-        	<link rel="stylesheet" href="styl.css">
+        	<link rel="stylesheet" href="style.css">
         </head>
         <body>
         	<!—- Třída(viz níže) -->
